@@ -21,6 +21,7 @@
   width: 39.875rem;
   height: 3.375rem;
   background: var(--gray-500);
+  color: var(--gray-100);
   border: 1px solid var(--gray-700);
   border-radius: 8px;
 }
@@ -32,7 +33,7 @@
   outline: 0;
   border: 0;
   background-color: var(--blue-dark);
-
+  color: var(--gray-100);
   display: flex;
   align-items: center;
   gap: 8px;
