@@ -15,15 +15,6 @@ export function NewTask({ onCreateNewTask }: NewTaskProps) {
    
     setNewTaskDescription('');
   }
-
-  function handleNewTaskChange(event: ChangeEvent<HTMLInputElement>) {
-    event.target.setCustomValidity("");
-    setNewTaskDescription(event.target.value);
-  }
-
-  function handleNewTaskInvalid(event: InvalidEvent<HTMLInputElement>) {
-    event.target.setCustomValidity("Esse campo é obrigatório!");
-  }
   
   return(
       <form className={styles.container} onSubmit={handleCreateNewTask}>
@@ -32,8 +23,6 @@ export function NewTask({ onCreateNewTask }: NewTaskProps) {
           type="text"
           placeholder="Adicione uma nova tarefa"
           value={newTaskDescription}
-          onChange={handleNewTaskChange}
-          onInvalid={handleNewTaskInvalid}
         />
         <button type="submit" className={styles.button}>
           Criar <PlusCircle size={20} />
