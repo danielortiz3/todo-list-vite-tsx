@@ -28,17 +28,22 @@ export function TasksInfos({ tasks }: TasksProps) {
             <span className={styles.counterText}>0</span>
           </p>
         </div>
-      </div> 
-      <li className={styles.list}>
-        <input
-          className={styles.taskCheckbox}
-          type="checkbox"
-        />
-        <label>Estudar React</label>
-        <button title="Deletar tarefa">
-          <Trash size={20} />  
-        </button>
-      </li>
+      </div>
+      {tasks.map((task) => {
+        return (
+          <li key={task.id} className={styles.list}>
+          <input
+            className={styles.taskCheckbox}
+            type="checkbox"
+          />
+          <label>{task.description}</label>
+          <button title="Deletar tarefa">
+            <Trash size={20} />  
+          </button>
+          </li>
+        )
+      })} 
+      
     </div>
   )
 }
