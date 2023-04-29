@@ -1,0 +1,13 @@
+.container {
+  width: 100%;
+  height: 12.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--gray-700);
+}
+
+.imgLogo {
+  width: 7.875rem;
+  height: 3rem;
+}

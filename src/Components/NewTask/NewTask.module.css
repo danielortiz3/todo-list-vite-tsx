@@ -1,0 +1,40 @@
+.container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: .5rem;
+  
+  position: absolute;
+  width: 46rem;
+  height: 3.375rem;
+  left: calc(50% - 46rem/2);
+  margin-top: calc((3.375rem / 2) * -1);
+}
+
+.input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem;
+  gap: 0.5rem;
+  width: 39.875rem;
+  height: 3.375rem;
+  background: var(--gray-500);
+  border: 1px solid var(--gray-700);
+  border-radius: 8px;
+}
+
+.button {
+  font-weight: bold;
+  padding: 16px;
+  border-radius: 8px;
+  outline: 0;
+  border: 0;
+  background-color: var(--blue-dark);
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+

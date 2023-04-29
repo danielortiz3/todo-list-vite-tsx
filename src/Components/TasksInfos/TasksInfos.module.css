@@ -1,0 +1,159 @@
+.tasksContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+
+  position: absolute;
+  width: 46rem;
+  height: 17.9375rem;
+  left: calc(50% - 46rem/2);
+  top: 18.1875rem;
+}
+
+.infoHeader {
+  align-items: flex-end;
+  align-self: stretch;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.tasksInfos {
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+  position: relative;
+  width: fit-content;
+}
+
+.tasksCreatedText {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.0625rem;
+  color: var(--blue);
+}
+
+.tasksDoneText {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: var(--purple)
+}
+
+.counter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: .125rem .5rem;
+  gap: .625rem;
+
+  width: 1.5625rem;
+  height: 1.1875rem;
+
+  background: var(--gray-400);
+  border-radius: 62.4375rem;
+  }
+
+  .counterText {
+    width: .5625rem;
+    height: .9375rem;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: .75rem;
+    line-height: .9375rem;
+
+    color: var(--gray-200);
+  }
+
+  .taskListContainer {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: .75rem;
+    width: 46rem;
+    height: 25.5rem;
+  }
+
+  .list{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 12px;
+    width: 46rem;
+    height: 4.5rem;
+    background: var(--gray-500);
+    border: 1px solid var(--gray-400);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+  }
+  
+  .list label{
+    flex: 1;
+    font-size: 0.875rem;
+    line-height: 1.25;
+    color: var(--gray-100);
+    cursor: grab;
+  }
+  
+  .list label.checked {
+    color: var(--gray-300);
+    text-decoration: line-through;
+  }
+  
+  .list input[type="checkbox"]{
+    position: relative;
+    width: 1.125rem;
+    height: 1.125rem;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 2px solid var(--blue);
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .list input[type="checkbox"]:checked {
+    background: var(--purple-dark);
+    border: .1125rem solid var(--purple-dark);
+  
+  }
+  
+  .list input[type="checkbox"]:checked:after {
+    border: .1125rem solid #fff;
+    border-top: none;
+    border-right: none;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: rotate(315deg) translateY(-100%);
+    height: 0.25rem;
+    width: 0.5rem;
+  }
+  
+  .list button{
+    display: flex;
+    background: transparent;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    color: var(--gray-300)
+  }
+  
+  .list button:hover {
+    color: var(--red);
+  }
