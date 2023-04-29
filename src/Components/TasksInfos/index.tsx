@@ -12,7 +12,6 @@ interface TasksProps {
 }
 
 export function TasksInfos({ tasks }: TasksProps) {
-  console.log(tasks);
   return (
     <div className={styles.tasksContainer}>
       <div className={styles.infoHeader}>

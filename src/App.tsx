@@ -2,28 +2,31 @@ import { v4 as uuidv4 } from 'uuid'
 import { Header } from './Components/Header';
 import styles from './App.module.css';
 import { NewTask } from './Components/NewTask';
-import { TaskType, TasksInfos } from './Components/TasksInfos';
+import { TasksInfos } from './Components/TasksInfos';
+import { useState } from 'react';
 
-const taskList: TaskType[] = [
-  {
-    id: uuidv4(),
-    description: 'Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.',
-    isCompleted: true
-  },
-  {
-    id: uuidv4(),
-    description: 'Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.',
-    isCompleted: true
-  }
-]
+type Tasks = {
+  id: string;
+  description: string;
+  isCompleted: boolean
+}
 
 function App() {
+  const [tasks, setTasks] = useState<Tasks[]>([]);
+
+  function addNewTask(newTaskDescription: string) {
+    const newId = uuidv4();
+    const newTask: Tasks = { id: newId, description: newTaskDescription, isCompleted: false}
+    setTasks([...tasks, newTask]);
+  }
+
+
   return (
       <div className={styles.wrapper}>
         <Header />
-        <NewTask />
+        <NewTask onCreateNewTask={addNewTask}/>
         <TasksInfos 
-          tasks={taskList}
+          tasks={tasks}
         />
       </div>
   )
