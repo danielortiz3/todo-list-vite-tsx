@@ -1,4 +1,4 @@
-.tasksContainer {
+.info {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -86,7 +86,7 @@
     height: 25.5rem;
   }
 
-  .list{
+  /* .list{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -156,4 +156,4 @@
   
   .list button:hover {
     color: var(--red);
-  }
+  } */

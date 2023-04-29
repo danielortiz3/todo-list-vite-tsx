@@ -13,10 +13,10 @@ type Tasks = {
 
 function App() {
   const [tasks, setTasks] = useState<Tasks[]>([]);
-
+  console.log(tasks);
   function addNewTask(newTaskDescription: string) {
     const newId = uuidv4();
-    const newTask: Tasks = { id: newId, description: newTaskDescription, isCompleted: false}
+    const newTask: Tasks = { id: newId, description: newTaskDescription, isCompleted: true}
     setTasks([...tasks, newTask]);
   }
 

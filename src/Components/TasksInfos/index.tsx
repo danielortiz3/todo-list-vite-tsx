@@ -13,7 +13,7 @@ interface TasksProps {
 
 export function TasksInfos({ tasks }: TasksProps) {
   return (
-    <div className={styles.tasksContainer}>
+    <div className={styles.info}>
       <div className={styles.infoHeader}>
         <div className={styles.tasksInfos}>
           <p className={styles.tasksCreatedText}>Tarefas criadas</p>
@@ -28,21 +28,6 @@ export function TasksInfos({ tasks }: TasksProps) {
           </p>
         </div>
       </div>
-      {tasks.map((task) => {
-        return (
-          <li key={task.id} className={styles.list}>
-          <input
-            className={styles.taskCheckbox}
-            type="checkbox"
-          />
-          <label>{task.description}</label>
-          <button title="Deletar tarefa">
-            <Trash size={20} />  
-          </button>
-          </li>
-        )
-      })} 
-      
     </div>
   )
 }
