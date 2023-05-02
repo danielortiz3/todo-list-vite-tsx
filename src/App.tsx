@@ -21,9 +21,26 @@ function App() {
   }
 
   function completeTask(taskId: string) {
-    console.log(`Tarefa ${taskId} completa!`);
+    setTasks((state) => { // state contém o estado mais atualizado
+      return state.map((item) => {
+        if(item.id === taskId) {
+          return {
+            ...item,
+            isCompleted: !item.isCompleted
+          }
+        }
+        return item;
+      })
+    })
   }
 
+  function removeTask(taskId: string) {
+    setTasks((state) => {
+      return state.filter((item) => {
+        return item.id !== taskId;
+      })
+    })
+  }
 
   return (
       <div className={styles.wrapper}>
@@ -31,6 +48,7 @@ function App() {
         <NewTask onCreateNewTask={addNewTask}/>
         <TasksInfos
           onCompleteTask={completeTask}
+          onRemoveTask={removeTask}
           tasks={tasks}
         />
       </div>
