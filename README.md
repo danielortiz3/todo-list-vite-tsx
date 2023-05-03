@@ -46,7 +46,7 @@ Projeto foi hospedado na Vercel. Acesse o **Ignite Timer** desenvolvido [clicand
 **Clone este repositório**
 
 ```bash
-git clone https://github.com/vitorsemidio-dev/ignite-todo-list.git
+git clone https://github.com/danielortiz3/todo-list-vite-tsx.git
 ```
 
 **Acesse a pasta**
