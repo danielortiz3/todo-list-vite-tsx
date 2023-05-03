@@ -30,16 +30,16 @@ Este projeto foi um dos desafios da Trilha ReactJS. Nesse desafio, foi desenvolv
 - [x] Remover uma tarefa da listagem
 - [x] Mostrar o progresso de conclusão das tarefas
 
-Projeto foi hospedado na Vercel. Acesse o **Ignite Timer** desenvolvido [clicando aqui](https://ignite-todo-list-vitorsemidio-dev.vercel.app/).
+Projeto foi hospedado na Vercel. Acesse o **Ignite Timer** desenvolvido [clicando aqui](https://todo-list-vite-14vd5k570-danielortiz3.vercel.app/).
 
 ### 📸 Imagens
 
 **Lista Preenchida**
-<img src=".github/ignite-todo-list-desktop.png" alt="página de histórico com a listagem dos pomodoros" />
+<img src=".github/list.png" alt="página de histórico com a listagem dos pomodoros" />
 
 **Lista Vazia**
 
-<img src=".github/ignite-todo-empty.png" alt="página inicial do projeto Ignite Timer com pomodoro ligado" />
+<img src=".github/empty-list.png" alt="página inicial do projeto Ignite Timer com pomodoro ligado" />
 
 ## 🧭 Como rodar o projeto
 
@@ -79,7 +79,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/file/0n0zDN7zbzhRbaEO74Xesx/ToDo-List). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
 
-<img src=".github/todo-list-figma.png" />
+<img src=".github/figma.png" />
 
 ## 📝 Licença
 
