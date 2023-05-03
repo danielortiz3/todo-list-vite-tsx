@@ -29,6 +29,7 @@ function handleRemoveTask(taskId: string): void {
 
 const tasksCreated = tasks.length;
 const tasksCompleted = tasks.filter(task => task.isCompleted).length;
+const sortedTasks = tasks.sort((a: TaskType, b: TaskType) => Number(a.isCompleted) - Number( b.isCompleted));
 
 return (
   <div className={styles.info}>
@@ -60,7 +61,8 @@ return (
     </div>
     ) : (
       <div className={styles.listContainer}>
-        {tasks.map((task) => {
+        {sortedTasks.map((task) => {
+          console.log(task);
           return(
             <li 
               key={task.id} 
