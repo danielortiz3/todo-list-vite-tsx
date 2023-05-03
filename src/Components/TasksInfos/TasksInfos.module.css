@@ -150,18 +150,6 @@
   border-radius: 8px;
 }
 
-.listDescription {
-  width: 632px;
-  height: 40px;
-
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 140%;
-  color: var(--gray-100);
-}
-
 .listItens label {
   font-family: 'Inter';
   font-style: normal;
@@ -174,6 +162,11 @@
   line-height: 1.25;
   color: var(--gray-100);
   cursor: grab;
+}
+
+.listDescription {
+  text-decoration: line-through;
+  color: var(--gray-300);
 }
 
 .listItens input[type="checkbox"]{

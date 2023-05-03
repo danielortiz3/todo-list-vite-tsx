@@ -62,7 +62,10 @@ return (
       <div className={styles.listContainer}>
         {tasks.map((task) => {
           return(
-            <li key={task.id} className={styles.listItens}>
+            <li 
+              key={task.id} 
+              className={styles.listItens}
+            >
               <img
                 className={styles.listCheckbox}
                 src={task.isCompleted ? Checked : Unchecked}
@@ -70,7 +73,7 @@ return (
                 onClick={(error) => handleCompletedChange(error, task.id)}
               />
               <label 
-                className={styles.listDescription}
+                className={task.isCompleted ? styles.listDescription : ''}
               >
                 {task.description}
               </label>
