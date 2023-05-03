@@ -33,7 +33,6 @@ export function NewTask({ onCreateNewTask }: NewTaskProps) {
         <button 
           type="submit"
           className={styles.button}
-          onClick={() => styles.buttonAnimation}
         >
           Criar <PlusCircle size={20} />
         </button>
