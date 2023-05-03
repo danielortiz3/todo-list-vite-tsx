@@ -1,7 +1,9 @@
+
+
 <img src=".github/banner-ignite-todo-list.png" alt="banner de milhões" />
 
 <h2 align="center">
-   Ignite Todo List | <img alt="badge rocketseat" align="center" src=".github/rocket.svg">
+   Ignite Todo List | <img src="https://github.com/danielortiz3/ignite-todo-list/blob/main/.github/rocket.svg" align="center"/>
 </h2>
 
 <p align="center">
