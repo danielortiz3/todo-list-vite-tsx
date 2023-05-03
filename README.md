@@ -37,7 +37,7 @@ Projeto foi hospedado na Vercel. Acesse o **Ignite Timer** desenvolvido [clicand
 ### 📸 Imagens
 
 **Lista Preenchida**
-<img src=".github/list.png" alt="página de histórico com a listagem dos pomodoros" />
+<img src=".github/full-list.png" alt="página de histórico com a listagem dos pomodoros" />
 
 **Lista Vazia**
 
